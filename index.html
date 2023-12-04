@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/Users/dzhuraev/Documents/Atom/Login-test/styles.css">
+    <title></title>
+  </head>
+  <body>
+    <h1>Оставьте заявку!</h1>
+    <form method="post" id="form">
+      <div class="row">
+        <label>🙂 Имя </label>
+        <input type="text" name="name" placeholder="" required autofocus autocomplete="off" minlength="2" maxlength="20" title="как к Вам обращаться?" />
+      </div>
+
+      <div class="row">
+        <label>📧 Email</label>
+        <input type="text" name="email" placeholder="адрес@email.com" required autocomplete="off" maxlength="40" title="мы напишем сюда" />
+      </div>
+
+      <div class="row">
+        <label>🤙 Телефон</label>
+        <input type="text" name="phone" placeholder="+82..." required autocomplete="off" minlength="10" maxlength="13"  title="или в Telegram/WhatsApp" />
+      </div>
+
+      <div class="row">
+        <textarea
+          name="message"
+          maxlength="100"
+          id="message"
+          cols="30"
+          rows="4"
+          placeholder="Напишите мне"
+          title="уточните, чем я могу быть вам полезен?"
+        ></textarea>
+      </div>
+
+      <div class="row">
+        <input type="checkbox" name="rule" id="rule" checked required />
+        <label for="rule">Согласны на обработку персональных данных</label>
+      </div>
+
+      <div class="row">
+        <input type="submit" value="👉 отправить"/>
+      </div>
+    </form>
+  </body>
+</html>
